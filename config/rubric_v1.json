@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "channel_defaults": {
+    "linkedin": {"min_avg": 8.5, "max_len": 1200},
+    "instagram": {"min_avg": 8.5, "max_len": 2200}
+  },
+  "criteria": [
+    {"id": "clarity", "label": "Clarity & Readability", "weight": 1.0, "min": 8},
+    {"id": "hook", "label": "Hook Strength", "weight": 0.8, "min": 8},
+    {"id": "value", "label": "Value Density", "weight": 1.0, "min": 8},
+    {"id": "cta", "label": "Clear CTA", "weight": 0.6, "pass": true},
+    {"id": "tone", "label": "Brand Voice Match", "weight": 1.2, "min": 8},
+    {"id": "compliance", "label": "Compliance & Disclosure", "weight": 1.0, "pass": true},
+    {"id": "length", "label": "Length & Formatting", "weight": 0.5, "pass": true}
+  ],
+  "hard_blocks": ["hallucination", "plagiarism", "toxicity", "sensitive_claims"]
+}
